@@ -1,7 +1,8 @@
 table {
-    width: 99vw;
+    width: 98vw;
     text-align: center;
     height: 25vh;
+    margin-bottom: 30px;
 }
 
 .first, .second, .third, #p1, #p2 {
@@ -31,6 +32,10 @@ div {
     padding-bottom: 10px;
 }
 
+div:active {
+    transform: scale(0.9);
+}
+
 .typeShoot {
     background-color: rgb(156, 49, 255);
     color: white;
@@ -50,4 +55,45 @@ button {
     padding: 20px;
     background-color: rgb(255, 238, 0);
     border-radius: 15px;
+}
+
+#battute {
+    background-color: rgb(61,116,117);
+    color: black;
+    margin: 2px;
+    border-radius: 15px;
+}
+
+#risposte {
+    background-color: rgb(71,156,157);
+    color: black;
+    margin: 2px;
+    border-radius: 15px;
+}
+
+#terziTocchi {
+    background-color: rgb(110,181,170);
+    color: black;
+    margin: 2px;
+    border-radius: 15px;
+}
+
+#durataScambi {
+    background-color: rgb(136,175,149);
+    color: black;
+    margin: 2px;
+    border-radius: 15px;
+}
+
+#FoGandWin {
+    background-color: rgb(129,154,120);
+    color: black;
+    margin: 2px;
+    border-radius: 15px;
+}
+
+td {
+    margin: 2px;
+    border-radius: 15px;
+    padding: 10px;
 }
