@@ -343,6 +343,42 @@ function arrayRead() {
         }
     }
 
+    PbatTot.innerHTML = 'Battute totali: '
+    PbatPrima.innerHTML = 'Battute di prima: '; 
+    PbatSeconda.innerHTML = 'Battute di seconda: '; 
+    PbatC.innerHTML = 'Battute centrali: '; 
+    PbatE.innerHTML = 'Battute esterne: '; 
+    PbatI.innerHTML = 'Battute interne: '; 
+    PbatP1.innerHTML = 'Battute del giocatore 1: '; 
+    PbatP2.innerHTML = 'Battute del giocatore 2: ';
+
+    PrispTot.innerHTML = 'Risposte totali: '; 
+    PrispC.innerHTML = 'Risposte centrali: '; 
+    PrispT.innerHTML = 'Risposte sulla T: '; 
+    PrispD.innerHTML = 'Risposte diagonali: '; 
+    PrispL.innerHTML = 'Risposte lungolinea: '; 
+    PrispP1.innerHTML = `Risposte del giocatore 1: `; 
+    PrispP2.innerHTML = 'Risposte del giocatore 2: ';
+
+    PtTTot.innerHTML = 'Terzi tocchi totali: '; 
+    PtTC.innerHTML = 'Terzi tocchi centrali: '; 
+    PtTT.innerHTML = 'Terzi tocchi sulla T: '; 
+    PtTD.innerHTML = 'Terzi tocchi daigonali: '; 
+    PtTL.innerHTML = 'Terzi tocchi lungolinea: '; 
+    PtTP1.innerHTML = 'Terzi tocchi del giocatore 1: ';
+    PtTP2.innerHTML = 'Terzi tocchi del giocatore 2: '; 
+
+    P04.innerHTML = '0 - 4 scambi: '; 
+    P48.innerHTML = '4 - 8 scambi: '; 
+    FUCKINGVARIABILE.innerHTML = '9+ scambi: '; 
+
+    PF.innerHTML = 'Scambi forzati: '; 
+    PG.innerHTML = 'Scambi gratuiti: '; 
+
+    PwinP1.innerHTML = 'Set vinti dal giocatori 1: '; 
+    PwinP2.innerHTML = 'Set vinti dal giocatore 2: ';
+
+
     PbatTot.innerHTML += batTot; 
     PbatPrima.innerHTML += `${batPrima}   ${Math.floor((batPrima * 100) / batTot)}%`; 
     PbatSeconda.innerHTML += `${batSeconda}   ${Math.floor((batSeconda * 100) / batTot)}%`; 
