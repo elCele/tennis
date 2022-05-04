@@ -189,5 +189,11 @@ function submitPunto() {
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
 
     //assegno dati
-    if(punto.giocatoreBattuta === 'G1')
+    if(punto.giocatoreBattuta === 'G1') {
+        Giocatore1.batTotG1 += 1;
+        console.log({Giocatore1, Giocatore2});
+    } else {
+        Giocatore2.batTotG2 += 1;
+        console.log({Giocatore1, Giocatore2});
+    }
 }
