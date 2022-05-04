@@ -19,7 +19,7 @@ form {
 p {
     border-radius: 15px;
     padding: 10px  10px;
-    background-color: #333333;
+    background-color: rgb(46, 45, 45);
     vertical-align: middle;
     color: white;
 }
@@ -33,12 +33,6 @@ select {
     width: 98vw;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 15px;
-}
-
-.punteggio {
-    background-color: #CCCCCC;
-    padding: 10px;
     border-radius: 15px;
 }
 
