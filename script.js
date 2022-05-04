@@ -414,3 +414,6 @@ function arrayRead() {
     PwinP1.innerHTML += `${WinP1}    ${Math.floor((WinP1 * 100) / (WinP1 + WinP2))}%`; 
     PwinP2.innerHTML += `${WinP2}    ${Math.floor((WinP2 * 100) / (WinP1 + WinP2))}%`; 
 }
+
+
+//hahahahahaha sei gay
