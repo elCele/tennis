@@ -36,27 +36,28 @@ const punto = {
 */
 
 /* Giocatore 2 
-    batTotG1: document.getElementById('batTotG1'),
-    batPrimaG1: document.getElementById('batPrimaG1'),
-    batSecondaG1: document.getElementById('batSecondaG1'),
-    batNoneG1: document.getElementById('batNoneG1'),
-    batEG1: document.getElementById('batEG1'),
-    batCG1: document.getElementById('batCG1'),
-    batIG1: document.getElementById('batIG1'),
-    rispTotG1: document.getElementById('rispTotG1'),
-    rispNoneG1: document.getElementById('rispNoneG1'),
-    rispCG1: document.getElementById('rispCG1'),
-    rispTG1: document.getElementById('rispTG1'),
-    rispDG1: document.getElementById('rispDG1'),
-    rispLG1: document.getElementById('rispLG1'),
-    t3TotG1: document.getElementById('t3TotG1'),
-    t3NoneG1: document.getElementById('t3NoneG1'),
-    t3CG1: document.getElementById('t3CG1'),
-    t3T1: document.getElementById('t3TG1'),
-    t3D1: document.getElementById('t3DG1'),
-    t3L1: document.getElementById('t3LG1'),
-    winG1: document.getElementById('winG1')
+    batTotG2: document.getElementById('batTotG2'),
+    batPrimaG2: document.getElementById('batPrimaG2'),
+    batSecondaG2: document.getElementById('batSecondaG2'),
+    batNoneG2: document.getElementById('batNoneG2'),
+    batEG2: document.getElementById('batEG2'),
+    batCG2: document.getElementById('batCG2'),
+    batIG2: document.getElementById('batIG2'),
+    rispTotG2: document.getElementById('rispTotG2'),
+    rispNoneG2: document.getElementById('rispNoneG2'),
+    rispCG2: document.getElementById('rispCG2'),
+    rispTG2: document.getElementById('rispTG2'),
+    rispDG2: document.getElementById('rispDG2'),
+    rispLG2: document.getElementById('rispLG2'),
+    t3TotG2: document.getElementById('t3TotG2'),
+    t3NoneG2: document.getElementById('t3NoneG2'),
+    t3CG2: document.getElementById('t3CG2'),
+    t3T2: document.getElementById('t3TG2'),
+    t3D2: document.getElementById('t3DG2'),
+    t3L2: document.getElementById('t3LG2'),
+    winG2: document.getElementById('winG2')
 */
+
 //pozzo variabili
 let puntiGameG1 = 0;
 let puntiGameG2 = 0;
@@ -186,4 +187,7 @@ function submitPunto() {
     }
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
+
+    //assegno dati
+    if(punto.giocatoreBattuta === 'G1')
 }
