@@ -60,7 +60,7 @@ td {
         text-align: center;
 }
 
-#g1 {
+.tableBG {
     background-color: beige;
     margin: 10px;
     border-radius: 15px;
