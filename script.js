@@ -47,7 +47,6 @@ function submitPunto() {
     punto.fog = document.getElementById('fg').value;
     punto.durata = document.getElementById('game').value;
     punto.vincitore = document.getElementById('vincitore').value;
-    punto.N++;
 
     // punteggio
     const punteggioBox = document.getElementById('punteggio');
