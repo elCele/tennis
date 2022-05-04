@@ -1,3 +1,7 @@
+body {
+    width: 98vw;
+}
+
 div {
     margin: 10px;
 }
@@ -53,7 +57,7 @@ select {
 }
 
 table {
-    width: 92vw;
+    width: 94vw;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgeZoVXbHZsFGLHlGkhKSeQey68NEW_QKSxQ&usqp=CAU);
     margin: 10px;
     border-radius: 15px;
