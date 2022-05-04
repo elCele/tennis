@@ -191,9 +191,11 @@ function submitPunto() {
     //assegno dati
     if(punto.giocatoreBattuta === 'G1') {
         Giocatore1.batTotG1 += 1;
-        console.log({Giocatore1, Giocatore2});
     } else {
         Giocatore2.batTotG2 += 1;
-        console.log({Giocatore1, Giocatore2});
+    }
+
+    if(punto.battuta === '1' && punto.giocatoreBattuta === 'G1') {
+        
     }
 }
