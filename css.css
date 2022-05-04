@@ -42,6 +42,12 @@ select {
     border-radius: 15px;
 }
 
+.tableDiv {
+    background-color: #CCCCCC;
+    padding: 10px;
+    border-radius: 15px;
+}
+
 .bg {
     background-size: 100px 82px;
 }
