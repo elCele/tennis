@@ -17,7 +17,7 @@
             <div id="playerDiv">
                 <label for="playerBattuta">In battuta: </label>
                 <select id="playerBattuta">
-                    <option value="G1">Giocatore 1</option>
+                    <option value="G2">Giocatore 1</option>
                     <option value="G2">Giocatore 2</option>
                 </select>
             </div>
@@ -93,7 +93,7 @@
         <form id="vincitoreForm">
             <p>Vincitore</p>
             <select id="vincitore">
-                <option value="G1">Giocatore 1</option>
+                <option value="G2">Giocatore 1</option>
                 <option value="G2">Giocatore 2</option>
             </select>
         </form>
@@ -109,7 +109,7 @@
         <tr><td colspan="3"><div id="game" class="punteggio">0 - 0</div></td></tr>
     </table>
     
-    <table>
+    <table name="Giocatore 1">
         <div class="tableBG">
             <!--Giocatore 1-->
             <tr><td colspan="3"><p>Giocatore 1</p></td></tr>
@@ -159,6 +159,58 @@
         </div>
 
     </table>
+    
+    <table name="Giocatore 2">
+        <div class="tableBG">
+            <!--Giocatore 1-->
+            <tr><td colspan="3"><p>Giocatore 1</p></td></tr>
+
+            <!--Variabili battuta-->
+            <tr><td colspan="3"><p>Statistiche battuta</p></td></tr>
+            <tr><td colspan="3"><div id="batTotG2" class="tableDiv">Battute totali: </div></td></tr>
+            <tr>
+                <td><div id="batPrimaG2" class="tableDiv">Battute di prima: </div></td>
+                <td><div id="batSecondaG2" class="tableDiv">Battute di seconda: </div></td>
+                <td><div id="batNoneG2" class="tableDiv">Battute sbagliate: </div></td>
+            </tr>
+            <tr>
+                <td><div id="batEG2" class="tableDiv">Battute esterne: </div></td>
+                <td><div id="batCG2" class="tableDiv">Battute centrali: </div></td>
+                <td><div id="batIG2" class="tableDiv">Battute interne: </div></td>
+            </tr>
+
+            <!--Variabili risposta-->
+            <tr><td colspan="3"><p>Statistiche risposta</p></td></tr>
+            <tr>
+                <td><div id="rispTotG2" class="tableDiv">Risposte totali: </div></td>
+                <td><div id="rispNoneG2" class="tableDiv">Risposte sbagliate: </div></td>
+                <td><div id="rispCG2" class="tableDiv">Risposte centrali: </div></td>
+            </tr>
+            <tr>
+                <td><div id="rispTG2" class="tableDiv">Risposte sulla T: </div></td>
+                <td><div id="rispDG2" class="tableDiv">Risposte sulla diagonale: </div></td>
+                <td><div id="rispLG2" class="tableDiv">Risposte lungolinea: </div></td>
+            </tr>
+
+            <!--Variabili terzo tocco-->
+            <tr><td colspan="3"><p>Statistiche terzo tocco</p></td></tr>
+            <tr>
+                <td><div id="3tTotG2" class="tableDiv">Terzi tocchi totali: </div></td>
+                <td><div id="3tNoneG2" class="tableDiv">Terzi tocchi sbagliati: </div></td>
+                <td><div id="3tCG2" class="tableDiv">Terzi tocchi centrali: </div></td>
+            </tr>
+            <tr>
+                <td><div id="3tTG2" class="tableDiv">Terzi tocchi sulla T: </div></td>
+                <td><div id="3tDG2" class="tableDiv">Terzi tocchi sulla diagonale: </div></td>
+                <td><div id="3tLG2" class="tableDiv">Terzi tocchi lungolinea: </div></td>
+            </tr>
+
+            <!--Vittorie-->
+            <tr><td colspan="3"><div id="winG2" class="tableDiv">Punti vinti: </div></td></tr>
+        </div>
+
+    </table>
+
     <script src="./script.js"></script>
 
     <a class="bg"></a>
