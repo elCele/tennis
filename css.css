@@ -45,3 +45,7 @@ select {
 .bg {
     background-size: 100px 82px;
 }
+
+td {
+    width: auto;
+}
