@@ -1,0 +1,47 @@
+div {
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+form {
+    width: 33vw;
+    text-align: center;
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    background-color: #CCCCCC;
+}
+
+p {
+    border-radius: 15px;
+    padding: 10px  10px;
+    background-color: #333333;
+    vertical-align: middle;
+    color: white;
+}
+
+select {
+    border-radius: 15px;
+    padding: 3px;
+}
+
+#submit {
+    width: 98vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+.punteggio {
+    background-color: #CCCCCC;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.bg {
+    background-size: 100px 82px;
+}

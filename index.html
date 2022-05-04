@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prova.css">
+    <title>Tennis</title>
+</head>
+
+<body>
+    <div class="flex">
+        <!--Battuta-->
+        <form id="battutaForm">
+            <p>Battuta</p>
+            <div id="playerDiv">
+                <label for="playerBattuta">In battuta: </label>
+                <select id="playerBattuta">
+                    <option value="G1">Giocatore 1</option>
+                    <option value="G2">Giocatore 2</option>
+                </select>
+            </div>
+
+            <div id="battutaNDiv">
+                <label for="battutaN">Battuta: </label>
+                <select id="battutaN">
+                    <option value="1">Prima</option>
+                    <option value="2">Seconda</option>
+                    <option value="none">/</option>
+                </select>
+            </div>
+
+            <div id="battutaDirDiv">
+                <label for="battutaDir">Direzione battuta: </label>
+                <select id="battutaDir">
+                    <option value="E">Esterna</option>
+                    <option value="C">Centrale</option>
+                    <option value="I">Interna</option>
+                    <option value="none">/</option>
+                </select>
+            </div>
+        </form>
+
+        <!--Risposta-->
+        <form id="rispostaForm">
+            <p>Risposta</p>
+            <label for="rispostaDir">Direzione risposta: </label>
+            <select id="rispostaDir">
+                <option value="C">Centrale</option>
+                <option value="T">T</option>
+                <option value="D">Diagonale</option>
+                <option value="L">Lungolinea</option>
+                <option value="none">/</option>
+            </select>
+        </form>
+
+        <!--Terzo tocco-->
+        <form id="terzoToccoForm">
+            <p>Terzo tocco</p>
+            <label for="terzoToccoDir">Direzione terzo tocco: </label>
+            <select id="terzoToccoDir">
+                <option value="C">Centrale</option>
+                <option value="T">T</option>
+                <option value="D">Diagonale</option>
+                <option value="L">Lungolinea</option>
+                <option value="none">/</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="flex">
+        <!--Forzato e Gratuito-->
+        <form id="fOGForm">
+            <p>Forzato o gratuito</p>
+                <select id="fg">
+                    <option value="F">Forzato</option>
+                    <option value="G">Gratuito</option>
+                </select>
+        </form>
+
+        <!--Durata game-->
+        <form id="gameForm">
+            <p>Durata game</p>
+            <select id="gameSelect">
+                <option value="4">0 - 4</option>
+                <option value="8">4 - 8</option>
+                <option value="9">9+</option>
+            </select>
+        </form>
+
+        <!--Vincitore-->
+        <form id="vincitoreForm">
+            <p>Vincitore</p>
+            <select id="vincitore">
+                <option value="G1">Giocatore 1</option>
+                <option value="G2">Giocatore 2</option>
+            </select>
+        </form>
+    </div>
+
+    <button id="submit" onclick="submitPunto()">Submit</button>
+
+    <div>
+        <P>Punteggio</P>
+        <div id="punteggio" class="punteggio"></div>
+        <p>Game</p>
+        <div id="game" class="punteggio"></div>
+    </div>
+    <script src="./prova.js"></script>
+
+    <a class="bg"></a>
+</body>
+
+</html>
