@@ -1,6 +1,5 @@
 div {
     margin: 10px;
-    text-align: center;
 }
 
 .flex {
@@ -53,4 +52,5 @@ table {
 
 td {
     width: 100%;
+    text-align: center;
 }
