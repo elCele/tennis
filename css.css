@@ -49,8 +49,7 @@ select {
 table {
     width: 94vw;
     background-color: #EFE7DB ;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
     border-radius: 15px;
     padding-left: 10px;
     padding-right: 10px;
