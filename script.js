@@ -58,13 +58,13 @@ const punto = {
     winG2: document.getElementById('winG2')
 */
 
-//pozzo variabili
+// pozzo variabili
 let puntiGameG1 = 0;
 let puntiGameG2 = 0;
 let gameG1 = 0;
 let gameG2 = 0;
 
-//oggetto Giocatore 1
+// oggetto Giocatore 1
 
 const Giocatore1 = {
     batTotG1: 0,
@@ -89,7 +89,7 @@ const Giocatore1 = {
     winG1: 0
 }
 
-//oggetto Giocatore 2
+// oggetto Giocatore 2
 
 const Giocatore2 = {
     batTotG2: 0,
@@ -188,8 +188,10 @@ function submitPunto() {
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
 
-    //assegno dati
+    // assegno dati
     if(punto.giocatoreBattuta === 'G1') {
+        
+        // Giocatore 1
         Giocatore1.batTotG1 += 1;
 
         if (punto.battuta === '1') {
@@ -198,6 +200,14 @@ function submitPunto() {
             Giocatore1.batSecondaG1 += 1;
         } else {
             Giocatore1.batNoneG1 += 1;
+        }
+
+        if (punto.dirBattuta === 'E') {
+            Giocatore1.batEG1 += 1;
+        } else if (punto.dirBattuta === 'C') {
+            Giocatore1.batCG1 += 1;
+        } else if (punto.dirBattuta === 'I') {
+            Giocatore1.batIG1 +=1;
         }
 
     } else {
