@@ -415,57 +415,57 @@ function submitPunto() {
 
             
         // output Div variabili Giocatore 1
-            batTotG1 = document.getElementById('batTotG1');
-            batPrimaG1 = document.getElementById('batPrimaG1');
-            batSecondaG1 = document.getElementById('batSecondaG1');
-            batNoneG1 = document.getElementById('batNoneG1');
-            batEG1 = document.getElementById('batEG1');
-            batCG1 = document.getElementById('batCG1');
-            batIG1 = document.getElementById('batIG1');
-            rispTotG1 = document.getElementById('rispTotG1');
-            rispNoneG1 = document.getElementById('rispNoneG1');
-            rispCG1 = document.getElementById('rispCG1');
-            rispTG1 = document.getElementById('rispTG1');
-            rispDG1 = document.getElementById('rispDG1');
-            rispLG1 = document.getElementById('rispLG1');
-            t3TotG1 = document.getElementById('t3TotG1');
-            t3NoneG1 = document.getElementById('t3NoneG1');
-            t3CG1 = document.getElementById('t3CG1');
-            t3TG1 = document.getElementById('t3TG1');
-            t3DG1 = document.getElementById('t3DG1');
-            t3LG1 = document.getElementById('t3LG1');
-            fG1 = document.getElementById('fG1');
-            gG1 = document.getElementById('gG1');
-            winG1 = document.getElementById('winG1');
+            batTotG1.innerHTML = document.getElementById('batTotG1');
+            batPrimaG1.innerHTML = document.getElementById('batPrimaG1');
+            batSecondaG1.innerHTML = document.getElementById('batSecondaG1');
+            batNoneG1.innerHTML = document.getElementById('batNoneG1');
+            batEG1.innerHTML = document.getElementById('batEG1');
+            batCG1.innerHTML = document.getElementById('batCG1');
+            batIG1.innerHTML = document.getElementById('batIG1');
+            rispTotG1.innerHTML = document.getElementById('rispTotG1');
+            rispNoneG1.innerHTML = document.getElementById('rispNoneG1');
+            rispCG1.innerHTML = document.getElementById('rispCG1');
+            rispTG1.innerHTML = document.getElementById('rispTG1');
+            rispDG1.innerHTML = document.getElementById('rispDG1');
+            rispLG1.innerHTML = document.getElementById('rispLG1');
+            t3TotG1.innerHTML = document.getElementById('t3TotG1');
+            t3NoneG1.innerHTML = document.getElementById('t3NoneG1');
+            t3CG1.innerHTML = document.getElementById('t3CG1');
+            t3TG1.innerHTML = document.getElementById('t3TG1');
+            t3DG1.innerHTML = document.getElementById('t3DG1');
+            t3LG1.innerHTML = document.getElementById('t3LG1');
+            fG1.innerHTML = document.getElementById('fG1');
+            gG1.innerHTML = document.getElementById('gG1');
+            winG1.innerHTML = document.getElementById('winG1');
 
         // output Div variabili Giocatore 2
-            batTotG2 = document.getElementById('batTotG2');
-            batPrimaG2 = document.getElementById('batPrimaG2');
-            batSecondaG2 = document.getElementById('batSecondaG2');
-            batNoneG2 = document.getElementById('batNoneG2');
-            batEG2 = document.getElementById('batEG2');
-            batCG2 = document.getElementById('batCG2');
-            batIG2 = document.getElementById('batIG2');
-            rispTotG2 = document.getElementById('rispTotG2');
-            rispNoneG2 = document.getElementById('rispNoneG2');
-            rispCG2 = document.getElementById('rispCG2');
-            rispTG2 = document.getElementById('rispTG2');
-            rispDG2 = document.getElementById('rispDG2');
-            rispLG2 = document.getElementById('rispLG2');
-            t3TotG2 = document.getElementById('t3TotG2');
-            t3NoneG2 = document.getElementById('t3NoneG2');
-            t3CG2 = document.getElementById('t3CG2');
-            t3TG2 = document.getElementById('t3TG2');
-            t3DG2 = document.getElementById('t3DG2');
-            t3LG2 = document.getElementById('t3LG2');
-            fG2 = document.getElementById('fG2');
-            gG2 = document.getElementById('gG2');
-            winG2 = document.getElementById('winG2');
+            batTotG2.innerHTML = document.getElementById('batTotG2');
+            batPrimaG2.innerHTML = document.getElementById('batPrimaG2');
+            batSecondaG2.innerHTML = document.getElementById('batSecondaG2');
+            batNoneG2.innerHTML = document.getElementById('batNoneG2');
+            batEG2.innerHTML = document.getElementById('batEG2');
+            batCG2.innerHTML = document.getElementById('batCG2');
+            batIG2.innerHTML = document.getElementById('batIG2');
+            rispTotG2.innerHTML = document.getElementById('rispTotG2');
+            rispNoneG2.innerHTML = document.getElementById('rispNoneG2');
+            rispCG2.innerHTML = document.getElementById('rispCG2');
+            rispTG2.innerHTML = document.getElementById('rispTG2');
+            rispDG2.innerHTML = document.getElementById('rispDG2');
+            rispLG2.innerHTML = document.getElementById('rispLG2');
+            t3TotG2.innerHTML = document.getElementById('t3TotG2');
+            t3NoneG2.innerHTML = document.getElementById('t3NoneG2');
+            t3CG2.innerHTML = document.getElementById('t3CG2');
+            t3TG2.innerHTML = document.getElementById('t3TG2');
+            t3DG2.innerHTML = document.getElementById('t3DG2');
+            t3LG2.innerHTML = document.getElementById('t3LG2');
+            fG2.innerHTML = document.getElementById('fG2');
+            gG2.innerHTML = document.getElementById('gG2');
+            winG2.innerHTML = document.getElementById('winG2');
 
         // output Div variabili durata
-            quattroDiv = document.getElementById('durataPunto04');
-            ottoDiv = document.getElementById('durataPunto48');
-            noveDiv = document.getElementById('durataPunto9');
+            quattroDiv.innerHTML = document.getElementById('durataPunto04');
+            ottoDiv.innerHTML = document.getElementById('durataPunto48');
+            noveDiv.innerHTML = document.getElementById('durataPunto9');
     }
 }
 
