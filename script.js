@@ -268,5 +268,7 @@ function submitPunto() {
             Giocatore2.rispNoneG2 += 1;
         }
 
-    } 
+    }
+    
+    // assegno dati
 }
