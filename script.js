@@ -443,28 +443,28 @@ function submitPunto() {
             winG1.innerHTML = `Punti vinti: ${Giocatore1.winG1} | ${fPerc(Npunti, Giocatore1.winG1)}%`;
 
         // output Div variabili Giocatore 2
-            batTotG2.innerHTML = document.getElementById('batTotG2');
-            batPrimaG2.innerHTML = document.getElementById('batPrimaG2');
-            batSecondaG2.innerHTML = document.getElementById('batSecondaG2');
-            batNoneG2.innerHTML = document.getElementById('batNoneG2');
-            batEG2.innerHTML = document.getElementById('batEG2');
-            batCG2.innerHTML = document.getElementById('batCG2');
-            batIG2.innerHTML = document.getElementById('batIG2');
-            rispTotG2.innerHTML = document.getElementById('rispTotG2');
-            rispNoneG2.innerHTML = document.getElementById('rispNoneG2');
-            rispCG2.innerHTML = document.getElementById('rispCG2');
-            rispTG2.innerHTML = document.getElementById('rispTG2');
-            rispDG2.innerHTML = document.getElementById('rispDG2');
-            rispLG2.innerHTML = document.getElementById('rispLG2');
-            t3TotG2.innerHTML = document.getElementById('t3TotG2');
-            t3NoneG2.innerHTML = document.getElementById('t3NoneG2');
-            t3CG2.innerHTML = document.getElementById('t3CG2');
-            t3TG2.innerHTML = document.getElementById('t3TG2');
-            t3DG2.innerHTML = document.getElementById('t3DG2');
-            t3LG2.innerHTML = document.getElementById('t3LG2');
-            fG2.innerHTML = document.getElementById('fG2');
-            gG2.innerHTML = document.getElementById('gG2');
-            winG2.innerHTML = document.getElementById('winG2');
+            batTotG2.innerHTML = `Battute totali: ${Giocatore2.batTotG2}`;
+            batPrimaG2.innerHTML = `Battute di prima: ${Giocatore2.batPrimaG2} | ${fPerc(Giocatore2.batTotG2, Giocatore2.batPrimaG2)}%`;
+            batSecondaG2.innerHTML = `Battute di seconda: ${Giocatore2.batSecondaG2} | ${fPerc(Giocatore2.batTotG2, Giocatore2.batSecondaG2)}%`;
+            batNoneG2.innerHTML = `Battute sbagliate: ${Giocatore2.batNoneG2} | ${fPerc(Giocatore2.batTotG2, Giocatore2.batNoneG2)}%`;
+            batEG2.innerHTML = `Battute esterne: ${Giocatore2.batEG2} | ${fPerc(Giocatore2.batTotG2, Giocatore2.batEG2)}%`;
+            batCG2.innerHTML = `Battute centrali: ${Giocatore2.batCG2} | ${fPerc(Giocatore2.batTotG2, Giocatore2.batCG2)}%`;
+            batIG2.innerHTML = `Battute interne: ${Giocatore2.batIG2} | ${fPerc(Giocatore2.batTotG2, Giocatore2.batIG2)}%`;
+            rispTotG2.innerHTML = `Risposte totali: ${Giocatore2.rispTotG2}`;
+            rispNoneG2.innerHTML = `Risposte sbagliate: ${Giocatore2.rispNoneG2} | ${fPerc(Giocatore2.rispTotG2, Giocatore2.rispNoneG2)}%`;
+            rispCG2.innerHTML = `Risposte centrali: ${Giocatore2.rispCG2} | ${fPerc(Giocatore2.rispTotG2, Giocatore2.rispCG2)}%`;
+            rispTG2.innerHTML = `Risposte sulla T: ${Giocatore2.rispTG2} | ${fPerc(Giocatore2.rispTotG2, Giocatore2.rispTG2)}%`;
+            rispDG2.innerHTML = `Risposte diagonali: ${Giocatore2.rispLG2} | ${fPerc(Giocatore2.rispTotG2, Giocatore2.rispLG2)}%`;
+            rispLG2.innerHTML = `Risposte lungolinea: ${Giocatore2.rispLG2} | ${fPerc(Giocatore2.rispTotG2, Giocatore2.rispLG2)}%`;
+            t3TotG2.innerHTML = `Terzi tocchi totali: ${Giocatore2.t3TotG2}`;
+            t3NoneG2.innerHTML = `Terzi tocchi sbagliati: ${Giocatore2.t3NoneG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3NoneG2)}%`;
+            t3CG2.innerHTML = `Terzi tocchi centrali: ${Giocatore2.t3CG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3CG2)}%`;
+            t3TG2.innerHTML = `Terzi tocchi sulla T: ${Giocatore2.t3TG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3TG2)}%`;
+            t3DG2.innerHTML = `Terzi tocchi diagonali: ${Giocatore2.t3DG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3DG2)}%`;
+            t3LG2.innerHTML = `Terzi tocchi lungolinea: ${Giocatore2.t3LG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3LG2)}%`;
+            fG2.innerHTML = `Punti forzati: ${Giocatore2.fG2} | ${fPerc(Giocatore2.winG2, Giocatore2.fG2)}%`;
+            gG2.innerHTML = `Punti gratuiti: ${Giocatore2.gG2} | ${fPerc(Giocatore2.winG2, Giocatore2.gG2)}%`;
+            winG2.innerHTML = `Punti vinti: ${Giocatore2.winG2} | ${fPerc(Npunti, Giocatore2.winG2)}%`;
 
         // output Div variabili durata
             quattroDiv.innerHTML = document.getElementById('durataPunto04');
