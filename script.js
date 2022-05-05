@@ -127,7 +127,11 @@ const durataObj = {
     nove: 0
 }
 
+    let Npunti = 0;
+
 function submitPunto() {
+
+    Npunti += 1;
 
     // reset object
     punto.giocatoreBattuta = '';
@@ -422,21 +426,21 @@ function submitPunto() {
             batEG1.innerHTML = `Battute esterne: ${Giocatore1.batEG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batEG1)}%`;
             batCG1.innerHTML = `Battute centrali: ${Giocatore1.batCG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batCG1)}%`;
             batIG1.innerHTML = `Battute interne: ${Giocatore1.batIG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batIG1)}%`;
-            rispTotG1.innerHTML = document.getElementById('rispTotG1');
-            rispNoneG1.innerHTML = document.getElementById('rispNoneG1');
-            rispCG1.innerHTML = document.getElementById('rispCG1');
-            rispTG1.innerHTML = document.getElementById('rispTG1');
-            rispDG1.innerHTML = document.getElementById('rispDG1');
-            rispLG1.innerHTML = document.getElementById('rispLG1');
-            t3TotG1.innerHTML = document.getElementById('t3TotG1');
-            t3NoneG1.innerHTML = document.getElementById('t3NoneG1');
-            t3CG1.innerHTML = document.getElementById('t3CG1');
-            t3TG1.innerHTML = document.getElementById('t3TG1');
-            t3DG1.innerHTML = document.getElementById('t3DG1');
-            t3LG1.innerHTML = document.getElementById('t3LG1');
-            fG1.innerHTML = document.getElementById('fG1');
-            gG1.innerHTML = document.getElementById('gG1');
-            winG1.innerHTML = document.getElementById('winG1');
+            rispTotG1.innerHTML = `Risposte totali: ${Giocatore1.rispTotG1}`;
+            rispNoneG1.innerHTML = `Risposte sbagliate: ${Giocatore1.rispNoneG1} | ${fPerc(Giocatore1.rispTotG1, Giocatore1.rispNoneG1)}%`;
+            rispCG1.innerHTML = `Risposte centrali: ${Giocatore1.rispCG1} | ${fPerc(Giocatore1.rispTotG1, Giocatore1.rispCG1)}%`;
+            rispTG1.innerHTML = `Risposte sulla T: ${Giocatore1.rispTG1} | ${fPerc(Giocatore1.rispTotG1, Giocatore1.rispTG1)}%`;
+            rispDG1.innerHTML = `Risposte diagonali: ${Giocatore1.rispLG1} | ${fPerc(Giocatore1.rispTotG1, Giocatore1.rispLG1)}%`;
+            rispLG1.innerHTML = `Risposte lungolinea: ${Giocatore1.rispLG1} | ${fPerc(Giocatore1.rispTotG1, Giocatore1.rispLG1)}%`;
+            t3TotG1.innerHTML = `Terzi tocchi totali: ${Giocatore1.t3TotG1}`;
+            t3NoneG1.innerHTML = `Terzi tocchi sbagliati: ${Giocatore1.t3NoneG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3NoneG1)}%`;
+            t3CG1.innerHTML = `Terzi tocchi centrali: ${Giocatore1.t3CG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3CG1)}%`;
+            t3TG1.innerHTML = `Terzi tocchi sulla T: ${Giocatore1.t3TG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3TG1)}%`;
+            t3DG1.innerHTML = `Terzi tocchi diagonali: ${Giocatore1.t3DG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3DG1)}%`;
+            t3LG1.innerHTML = `Terzi tocchi lungolinea: ${Giocatore1.t3LG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3LG1)}%`;
+            fG1.innerHTML = `Punti forzati: ${Giocatore1.fG1} | ${fPerc(Giocatore1.winG1, Giocatore1.fG1)}%`;
+            gG1.innerHTML = `Punti gratuiti: ${Giocatore1.gG1} | ${fPerc(Giocatore1.winG1, Giocatore1.gG1)}%`;
+            winG1.innerHTML = `Punti vinti: ${Giocatore1.winG1} | ${fPerc(Npunti, Giocatore1.winG1)}%`;
 
         // output Div variabili Giocatore 2
             batTotG2.innerHTML = document.getElementById('batTotG2');
