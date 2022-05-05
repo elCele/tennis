@@ -83,9 +83,9 @@ const Giocatore1 = {
     t3TotG1: 0,
     t3NoneG1: 0,
     t3CG1: 0,
-    t3T1: 0,
-    t3D1: 0,
-    t3L1: 0,
+    t3TG1: 0,
+    t3DG1: 0,
+    t3LG1: 0,
     fG1: 0,
     gG1: 0,
     winG1: 0
@@ -110,11 +110,11 @@ const Giocatore2 = {
     t3TotG2: 0,
     t3NoneG2: 0,
     t3CG2: 0,
-    t3T2: 0,
-    t3D2: 0,
-    t3L2: 0,
-    fG1: 0,
-    gG1: 0,
+    t3TG2: 0,
+    t3DG2: 0,
+    t3LG2: 0,
+    fG2: 0,
+    gG2: 0,
     winG2: 0
 }
 
@@ -147,6 +147,7 @@ function submitPunto() {
     punto.fog = document.getElementById('fg').value;
     punto.durata = document.getElementById('game').value;
     punto.vincitore = document.getElementById('vincitore').value;
+
 
     // punteggio
     const punteggioBox = document.getElementById('punteggio');
@@ -191,6 +192,7 @@ function submitPunto() {
     }
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
+
 
     // assegno dati battuta
     if(punto.giocatoreBattuta === 'G1') {
@@ -237,6 +239,7 @@ function submitPunto() {
 
     }
     
+
     // assegno dati risposta
     if (punto.giocatoreRisposta === 'G1') {
 
@@ -274,5 +277,6 @@ function submitPunto() {
 
     }
     
+
     // assegno dati
 }
