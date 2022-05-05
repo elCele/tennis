@@ -191,12 +191,12 @@ function submitPunto() {
     // assegno dati
     if(punto.giocatoreBattuta === 'G1') {
         
-        // Giocatore 1
+        // Giocatore 1 battuta
         Giocatore1.batTotG1 += 1;
 
         if (punto.battuta === '1') {
             Giocatore1.batPrimaG1 += 1;
-        } else if ( punto.battuta === '2') {
+        } else if (punto.battuta === '2') {
             Giocatore1.batSecondaG1 += 1;
         } else {
             Giocatore1.batNoneG1 += 1;
@@ -211,7 +211,26 @@ function submitPunto() {
         }
 
     } else {
+
+        // Giocatore 2 battuta
         Giocatore2.batTotG2 += 1;
+
+        if (punto.battuta === '1') {
+            Giocatore2.batPrimaG2 += 1;
+        } else if (punto.battuta === '2') {
+            Giocatore2.batSecondaG2 += 1;
+        } else {
+            Giocatore2.batNoneG2 += 1;
+        }
+
+        if (punto.dirBattuta === 'E') {
+            Giocatore2.batEG2 += 1;
+        } else if (punto.dirBattuta === 'C') {
+            Giocatore2.batCG2 += 1;
+        } else if (punto.dirBattuta === 'I') {
+            Giocatore2.batIG2 +=1;
+        }
+
     }
-    console.log(Giocatore1);
+    console.log(Giocatore2);
 }
