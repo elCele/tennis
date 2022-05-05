@@ -331,4 +331,10 @@ function submitPunto() {
             Giocatore1.gG1 += 1;
         }
     
+    // assegno vittorie
+    if (punto.vincitore === 'G1') {
+        Giocatore1.winG1 += 1;
+    } else {
+        Giocatore2.winG2 += 1;
+    }
 }
