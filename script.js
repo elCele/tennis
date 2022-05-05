@@ -375,13 +375,13 @@ function submitPunto() {
             const rispLG1 = document.getElementById('rispLG1'),
             const t3TotG1 = document.getElementById('t3TotG1'),
             const t3NoneG1 = document.getElementById('t3NoneG1'),
-            const  = document.getElementById('t3CG1'),
-            const  = document.getElementById('t3TG1'),
-            const  = document.getElementById('t3DG1'),
-            const  = document.getElementById('t3LG1'),
-            const  = document.getElementById('fG1'),
-            const  = document.getElementById('gG1'),
-            const  = document.getElementById('winG1')
+            const t3CG1 = document.getElementById('t3CG1'),
+            const t3TG1 = document.getElementById('t3TG1'),
+            const t3DG1 = document.getElementById('t3DG1'),
+            const t3LG1 = document.getElementById('t3LG1'),
+            const fG1 = document.getElementById('fG1'),
+            const gG1 = document.getElementById('gG1'),
+            const winG1 = document.getElementById('winG1')
 
         const arrayG2 = newArray(
             document.getElementById('batTotG2'),
