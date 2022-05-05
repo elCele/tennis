@@ -414,5 +414,20 @@ function submitPunto() {
             document.getElementById('durataPunto48'),
             document.getElementById('durataPunto9')
         ];
+
+        // Giocatore 1 output
+        for (let i = 0; i < arrayG1.lenght; i++) {
+            arrayG1[i].innerHTML = Giocatore1[i];
+        }
+
+        // Giocatore 2 output
+        for (let i = 0; i < arrayG2.lenght; i++) {
+            arrayG2[i].innerHTML = Giocatore2[i];
+        }
+
+        // Durata output
+        for (let i = 0; i < durataObj.lenght; i++) {
+            arrayDurata[i].innerHTML = durataObj[i];
+        }
     }
 }
