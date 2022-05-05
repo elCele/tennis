@@ -191,11 +191,17 @@ function submitPunto() {
     //assegno dati
     if(punto.giocatoreBattuta === 'G1') {
         Giocatore1.batTotG1 += 1;
+
+        if (punto.battuta === '1') {
+            Giocatore1.batPrimaG1 += 1;
+        } else if ( punto.battuta === '2') {
+            Giocatore1.batSecondaG1 += 1;
+        } else {
+            Giocatore1.batNoneG1 += 1;
+        }
+
     } else {
         Giocatore2.batTotG2 += 1;
     }
-
-    if(punto.battuta === '1' && punto.giocatoreBattuta === 'G1') {
-        
-    }
+    console.log(Giocatore1);
 }
