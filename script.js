@@ -1,4 +1,5 @@
 // oggetto punto
+
 const punto = {
     giocatoreBattuta: '',
     battuta: '',
@@ -131,6 +132,7 @@ function submitPunto() {
     punto.fog = '';
     punto.durata = '';
     punto.vincitore = '';
+
 
     // assegno variabili
     punto.giocatoreBattuta = document.getElementById('playerBattuta').value;
@@ -278,5 +280,43 @@ function submitPunto() {
     }
     
 
-    // assegno dati
+    // assegno terzo tocco
+    if (punto.giocatoreTT === 'G1') {
+
+        // Giocatore 1 terzo tocco
+        Giocatore1.t3TotG1 += 1;
+
+        if (punto.dirTT === 'C') {
+            Giocatore1.t3CG1 += 1;
+        } else if (punto.dirTT === 'T') {
+            Giocatore1.t3TG1 += 1;
+        } else if (punto.dirTT === 'D') {
+            Giocatore1.t3DG1 += 1;
+        } else if (punto.dirTT === 'L') {
+            Giocatore1.rispLG1 += 1;
+        } else {
+            Giocatore1.t3NoneG1 += 1;
+        }
+
+    } else {
+
+        // Giocatore 2 terzo tocco
+        Giocatore1.t3TotG2 += 1;
+
+        if (punto.dirTT === 'C') {
+            Giocatore1.t3CG2 += 1;
+        } else if (punto.dirTT === 'T') {
+            Giocatore1.t3TG2 += 1;
+        } else if (punto.dirTT === 'D') {
+            Giocatore1.t3DG2 += 1;
+        } else if (punto.dirTT === 'L') {
+            Giocatore1.rispLG2 += 1;
+        } else {
+            Giocatore1.t3NoneG1 += 1;
+        }
+
+    }
+
+    // assegno altre f o g
+    
 }
