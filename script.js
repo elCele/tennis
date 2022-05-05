@@ -247,7 +247,7 @@ function submitPunto() {
             Giocatore1.rispDG1 += 1;
         } else if (punto.dirRisposta === 'L') {
             Giocatore1.rispLG1 += 1;
-        } else (punto.dirRisposta === 'none') {
+        } else {
             Giocatore1.rispNoneG1 += 1;
         }
 
@@ -264,7 +264,7 @@ function submitPunto() {
             Giocatore2.rispDG2 += 1;
         } else if (punto.dirRisposta === 'L') {
             Giocatore2.rispLG2 += 1;
-        } else (punto.dirRisposta === 'none') {
+        } else {
             Giocatore2.rispNoneG2 += 1;
         }
 
