@@ -467,9 +467,9 @@ function submitPunto() {
             winG2.innerHTML = `Punti vinti: ${Giocatore2.winG2} | ${fPerc(Npunti, Giocatore2.winG2)}%`;
 
         // output Div variabili durata
-            quattroDiv.innerHTML = document.getElementById('durataPunto04');
-            ottoDiv.innerHTML = document.getElementById('durataPunto48');
-            noveDiv.innerHTML = document.getElementById('durataPunto9');
+            quattroDiv.innerHTML = `Tra 0 e 4 scambi: ${durataObj.quattro} | ${fPerc(Npunti, durataObj.quattro)}%`;
+            ottoDiv.innerHTML = `Tra 4 e 8 scambi: ${durataObj.otto} | ${fPerc(Npunti, durataObj.otto)}%`;
+            noveDiv.innerHTML = `Più di 9 scambi: ${durataObj.nove} | ${fPerc(Npunti, durataObj.nove)}%`;
     }
 }
 
