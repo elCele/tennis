@@ -417,8 +417,8 @@ function submitPunto() {
         // output Div variabili Giocatore 1
             batTotG1.innerHTML = `Battute totali: ${Giocatore1.batTotG1}`;
             batPrimaG1.innerHTML = `Battute di prima: ${Giocatore1.batPrimaG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batPrimaG1)}%`;
-            batSecondaG1.innerHTML = document.getElementById('batSecondaG1');
-            batNoneG1.innerHTML = document.getElementById('batNoneG1');
+            batSecondaG1.innerHTML = `Battute di seconda: ${Giocatore1.batSecondaG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batSecondaG1)}%`;
+            batNoneG1.innerHTML = `Battute sbagliate: ${Giocatore1.batNoneG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batNoneG1)}%`;
             batEG1.innerHTML = document.getElementById('batEG1');
             batCG1.innerHTML = document.getElementById('batCG1');
             batIG1.innerHTML = document.getElementById('batIG1');
