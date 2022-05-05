@@ -188,7 +188,7 @@ function submitPunto() {
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
 
-    // assegno dati
+    // assegno dati battuta
     if(punto.giocatoreBattuta === 'G1') {
         
         // Giocatore 1 battuta
@@ -232,5 +232,41 @@ function submitPunto() {
         }
 
     }
-    console.log(Giocatore2);
+    
+    // assegno dati risposta
+    if (punto.giocatoreRisposta === 'G1') {
+
+        // Giocatore 1 risposta
+        Giocatore1.rispTotG1 += 1;
+
+        if (punto.dirRisposta === 'C') {
+            Giocatore1.rispCG1 += 1;
+        } else if (punto.dirRisposta === 'T') {
+            Giocatore1.rispTG1 += 1;
+        } else if (punto.dirRisposta === 'D') {
+            Giocatore1.rispDG1 += 1;
+        } else if (punto.dirRisposta === 'L') {
+            Giocatore1.rispLG1 += 1;
+        } else (punto.dirRisposta === 'none') {
+            Giocatore1.rispNoneG1 += 1;
+        }
+
+    } else {
+
+        // Giocatore 2 risposta
+        Giocatore2.rispTotG2 += 1;
+
+        if (punto.dirRisposta === 'C') {
+            Giocatore2.rispCG2 += 1;
+        } else if (punto.dirRisposta === 'T') {
+            Giocatore2.rispTG2 += 1;
+        } else if (punto.dirRisposta === 'D') {
+            Giocatore2.rispDG2 += 1;
+        } else if (punto.dirRisposta === 'L') {
+            Giocatore2.rispLG2 += 1;
+        } else (punto.dirRisposta === 'none') {
+            Giocatore2.rispNoneG2 += 1;
+        }
+
+    } 
 }
