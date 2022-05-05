@@ -382,7 +382,7 @@ function submitPunto() {
             document.getElementById('t3DG1'),
             document.getElementById('t3LG1'),
             document.getElementById('fG1'),
-            document.getElementById('gG1');
+            document.getElementById('gG1'),
             document.getElementById('winG1')
         ];
     }
