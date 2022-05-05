@@ -360,58 +360,57 @@ function submitPunto() {
 
     function toViewValue() {
 
-            const batTtoG1 = document.getElementById('batTotG1'),
-            const batPrimaG1 = document.getElementById('batPrimaG1'),
-            const batSecondaG1 = document.getElementById('batSecondaG1'),
-            const batNoneG1 = document.getElementById('batNoneG1'),
-            const batEG1 = document.getElementById('batEG1'),
-            const batCG1 = document.getElementById('batCG1'),
-            const batIG1 = document.getElementById('batIG1'),
-            const rispTotG1 = document.getElementById('rispTotG1'),
-            const rispNoneG1 = document.getElementById('rispNoneG1'),
-            const rispCG1 = document.getElementById('rispCG1'),
-            const rispTG1 = document.getElementById('rispTG1'),
-            const rispDG1 = document.getElementById('rispDG1'),
-            const rispLG1 = document.getElementById('rispLG1'),
-            const t3TotG1 = document.getElementById('t3TotG1'),
-            const t3NoneG1 = document.getElementById('t3NoneG1'),
-            const t3CG1 = document.getElementById('t3CG1'),
-            const t3TG1 = document.getElementById('t3TG1'),
-            const t3DG1 = document.getElementById('t3DG1'),
-            const t3LG1 = document.getElementById('t3LG1'),
-            const fG1 = document.getElementById('fG1'),
-            const gG1 = document.getElementById('gG1'),
-            const winG1 = document.getElementById('winG1')
+        // variabili Giocatore 1
+            const batTotG1 = document.getElementById('batTotG1');
+            const batPrimaG1 = document.getElementById('batPrimaG1');
+            const batSecondaG1 = document.getElementById('batSecondaG1');
+            const batNoneG1 = document.getElementById('batNoneG1');
+            const batEG1 = document.getElementById('batEG1');
+            const batCG1 = document.getElementById('batCG1');
+            const batIG1 = document.getElementById('batIG1');
+            const rispTotG1 = document.getElementById('rispTotG1');
+            const rispNoneG1 = document.getElementById('rispNoneG1');
+            const rispCG1 = document.getElementById('rispCG1');
+            const rispTG1 = document.getElementById('rispTG1');
+            const rispDG1 = document.getElementById('rispDG1');
+            const rispLG1 = document.getElementById('rispLG1');
+            const t3TotG1 = document.getElementById('t3TotG1');
+            const t3NoneG1 = document.getElementById('t3NoneG1');
+            const t3CG1 = document.getElementById('t3CG1');
+            const t3TG1 = document.getElementById('t3TG1');
+            const t3DG1 = document.getElementById('t3DG1');
+            const t3LG1 = document.getElementById('t3LG1');
+            const fG1 = document.getElementById('fG1');
+            const gG1 = document.getElementById('gG1');
+            const winG1 = document.getElementById('winG1');
 
-        const arrayG2 = newArray(
-            document.getElementById('batTotG2'),
-            document.getElementById('batPrimaG2'),
-            document.getElementById('batSecondaG2'),
-            document.getElementById('batNoneG2'),
-            document.getElementById('batEG2'),
-            document.getElementById('batCG2'),
-            document.getElementById('batIG2'),
-            document.getElementById('rispTotG2'),
-            document.getElementById('rispNoneG2'),
-            document.getElementById('rispCG2'),
-            document.getElementById('rispTG2'),
-            document.getElementById('rispDG2'),
-            document.getElementById('rispLG2'),
-            document.getElementById('t3TotG2'),
-            document.getElementById('t3NoneG2'),
-            document.getElementById('t3CG2'),
-            document.getElementById('t3TG2'),
-            document.getElementById('t3DG2'),
-            document.getElementById('t3LG2'),
-            document.getElementById('fG2'),
-            document.getElementById('gG2'),
-            document.getElementById('winG2')
-        );
+        // variabili Giocatore 2
+            const batTotG2 = document.getElementById('batTotG2');
+            const batPrimaG2 = document.getElementById('batPrimaG2');
+            const batSecondaG2 = document.getElementById('batSecondaG2');
+            const batNoneG2 = document.getElementById('batNoneG2');
+            const batEG2 = document.getElementById('batEG2');
+            const batCG2 = document.getElementById('batCG2');
+            const batIG2 = document.getElementById('batIG2');
+            const rispTotG2 = document.getElementById('rispTotG2');
+            const rispNoneG2 = document.getElementById('rispNoneG2');
+            const rispCG2 = document.getElementById('rispCG2');
+            const rispTG2 = document.getElementById('rispTG2');
+            const rispDG2 = document.getElementById('rispDG2');
+            const rispLG2 = document.getElementById('rispLG2');
+            const t3TotG2 = document.getElementById('t3TotG2');
+            const t3NoneG2 = document.getElementById('t3NoneG2');
+            const t3CG2 = document.getElementById('t3CG2');
+            const t3TG2 = document.getElementById('t3TG2');
+            const t3DG2 = document.getElementById('t3DG2');
+            const t3LG2 = document.getElementById('t3LG2');
+            const fG2 = document.getElementById('fG2');
+            const gG2 = document.getElementById('gG2');
+            const winG2 = document.getElementById('winG2');
 
-        const arrayDurata = newArray(
-            document.getElementById('durataPunto04'),
-            document.getElementById('durataPunto48'),
-            document.getElementById('durataPunto9')
-        );
+        // variabili durata
+            const quattroDiv = document.getElementById('durataPunto04');
+            const ottoDiv = document.getElementById('durataPunto48');
+            const noveDiv = document.getElementById('durataPunto9');
     }
 }
