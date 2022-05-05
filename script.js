@@ -317,6 +317,18 @@ function submitPunto() {
 
     }
 
-    // assegno altre f o g
+    // assegno f o g
+        // Giocatore 1
+        if (punto.vincitore === 'G1' && punto.fog === 'F') {
+            Giocatore1.fG1 += 1;
+        } else if (punto.vincitore === 'G1' && punto.fog === 'G') {
+            Giocatore2.gG2 += 1;
+        }
+        // Giocatore 2
+        if (punto.vincitore === 'G2' && punto.fog === 'F') {
+            Giocatore2.fG2 += 1;
+        } else if (punto.vincitore === 'G2' && punto.fog === 'G') {
+            Giocatore1.gG1 += 1;
+        }
     
 }
