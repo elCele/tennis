@@ -359,30 +359,29 @@ function submitPunto() {
 
 
     function toViewValue() {
-        const arrayG1 = newArray(
-            document.getElementById('batTotG1'),
-            document.getElementById('batPrimaG1'),
-            document.getElementById('batSecondaG1'),
-            document.getElementById('batNoneG1'),
-            document.getElementById('batEG1'),
-            document.getElementById('batCG1'),
-            document.getElementById('batIG1'),
-            document.getElementById('rispTotG1'),
-            document.getElementById('rispNoneG1'),
-            document.getElementById('rispCG1'),
-            document.getElementById('rispTG1'),
-            document.getElementById('rispDG1'),
-            document.getElementById('rispLG1'),
-            document.getElementById('t3TotG1'),
-            document.getElementById('t3NoneG1'),
-            document.getElementById('t3CG1'),
-            document.getElementById('t3TG1'),
-            document.getElementById('t3DG1'),
-            document.getElementById('t3LG1'),
-            document.getElementById('fG1'),
-            document.getElementById('gG1'),
-            document.getElementById('winG1')
-        );
+
+            const batTtoG1 = document.getElementById('batTotG1'),
+            const batPrimaG1 = document.getElementById('batPrimaG1'),
+            const batSecondaG1 = document.getElementById('batSecondaG1'),
+            const batNoneG1 = document.getElementById('batNoneG1'),
+            const batEG1 = document.getElementById('batEG1'),
+            const batCG1 = document.getElementById('batCG1'),
+            const batIG1 = document.getElementById('batIG1'),
+            const rispTotG1 = document.getElementById('rispTotG1'),
+            const rispNoneG1 = document.getElementById('rispNoneG1'),
+            const rispCG1 = document.getElementById('rispCG1'),
+            const rispTG1 = document.getElementById('rispTG1'),
+            const rispDG1 = document.getElementById('rispDG1'),
+            const rispLG1 = document.getElementById('rispLG1'),
+            const t3TotG1 = document.getElementById('t3TotG1'),
+            const t3NoneG1 = document.getElementById('t3NoneG1'),
+            const  = document.getElementById('t3CG1'),
+            const  = document.getElementById('t3TG1'),
+            const  = document.getElementById('t3DG1'),
+            const  = document.getElementById('t3LG1'),
+            const  = document.getElementById('fG1'),
+            const  = document.getElementById('gG1'),
+            const  = document.getElementById('winG1')
 
         const arrayG2 = newArray(
             document.getElementById('batTotG2'),
@@ -414,20 +413,5 @@ function submitPunto() {
             document.getElementById('durataPunto48'),
             document.getElementById('durataPunto9')
         );
-
-        // Giocatore 1 output
-        for (let i = 0; i < arrayG1.lenght; i++) {
-            arrayG1[i].innerHTML = Giocatore1[i];
-        }
-
-        // Giocatore 2 output
-        for (let i = 0; i < arrayG2.lenght; i++) {
-            arrayG2[i].innerHTML = Giocatore2[i];
-        }
-
-        // Durata output
-        for (let i = 0; i < durataObj.lenght; i++) {
-            arrayDurata[i].innerHTML = durataObj[i];
-        }
     }
 }
