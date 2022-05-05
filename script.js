@@ -470,6 +470,6 @@ function submitPunto() {
 }
 
 function fPerc(tot, perc) {
-    let value = (perc * 100) / tot
+    let value = Math.round((perc * 100) / tot)
     return value;
 }
