@@ -129,7 +129,7 @@ const durataObj = {
 
 function submitPunto() {
 
-    console.log(Giocatore1[3]);
+    console.log(Giocatore1[3].value);
 
     // reset object
     punto.giocatoreBattuta = '';
