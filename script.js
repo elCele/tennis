@@ -86,6 +86,8 @@ const Giocatore1 = {
     t3T1: 0,
     t3D1: 0,
     t3L1: 0,
+    fG1: 0,
+    gG1: 0,
     winG1: 0
 }
 
@@ -111,6 +113,8 @@ const Giocatore2 = {
     t3T2: 0,
     t3D2: 0,
     t3L2: 0,
+    fG1: 0,
+    gG1: 0,
     winG2: 0
 }
 
