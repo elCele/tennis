@@ -351,9 +351,9 @@ function submitPunto() {
     }
 
     // assegno durata scambi
-    if (punto.durata === '4') {
+    if (punto.durata === 'quattro') {
         durataObj.quattro += 1;
-    } else if (punto.durata === '8') {
+    } else if (punto.durata === 'otto') {
         durataObj.otto += 1;
     } else {
         durataObj.nove += 1;
@@ -438,8 +438,8 @@ function submitPunto() {
             t3TG1.innerHTML = `Terzi tocchi sulla T: ${Giocatore1.t3TG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3TG1)}%`;
             t3DG1.innerHTML = `Terzi tocchi diagonali: ${Giocatore1.t3DG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3DG1)}%`;
             t3LG1.innerHTML = `Terzi tocchi lungolinea: ${Giocatore1.t3LG1} | ${fPerc(Giocatore1.t3TotG1, Giocatore1.t3LG1)}%`;
-            fG1.innerHTML = `Punti forzati: ${Giocatore1.fG1} | ${fPerc(Giocatore1.winG1, Giocatore1.fG1)}%`;
-            gG1.innerHTML = `Punti gratuiti: ${Giocatore1.gG1} | ${fPerc(Giocatore1.winG1, Giocatore1.gG1)}%`;
+            fG1.innerHTML = `Punti forzati: ${Giocatore1.fG1} | ${fPerc(Npunti, Giocatore1.fG1)}%`;
+            gG1.innerHTML = `Punti gratuiti: ${Giocatore1.gG1} | ${fPerc(Npunti, Giocatore1.gG1)}%`;
             winG1.innerHTML = `Punti vinti: ${Giocatore1.winG1} | ${fPerc(Npunti, Giocatore1.winG1)}%`;
 
         // output Div variabili Giocatore 2
@@ -462,8 +462,8 @@ function submitPunto() {
             t3TG2.innerHTML = `Terzi tocchi sulla T: ${Giocatore2.t3TG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3TG2)}%`;
             t3DG2.innerHTML = `Terzi tocchi diagonali: ${Giocatore2.t3DG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3DG2)}%`;
             t3LG2.innerHTML = `Terzi tocchi lungolinea: ${Giocatore2.t3LG2} | ${fPerc(Giocatore2.t3TotG2, Giocatore2.t3LG2)}%`;
-            fG2.innerHTML = `Punti forzati: ${Giocatore2.fG2} | ${fPerc(Giocatore2.winG2, Giocatore2.fG2)}%`;
-            gG2.innerHTML = `Punti gratuiti: ${Giocatore2.gG2} | ${fPerc(Giocatore2.winG2, Giocatore2.gG2)}%`;
+            fG2.innerHTML = `Punti forzati: ${Giocatore2.fG2} | ${fPerc(Npunti, Giocatore2.fG2)}%`;
+            gG2.innerHTML = `Punti gratuiti: ${Giocatore2.gG2} | ${fPerc(Npunti, Giocatore2.gG2)}%`;
             winG2.innerHTML = `Punti vinti: ${Giocatore2.winG2} | ${fPerc(Npunti, Giocatore2.winG2)}%`;
 
         // output Div variabili durata
