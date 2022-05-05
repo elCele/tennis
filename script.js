@@ -419,9 +419,9 @@ function submitPunto() {
             batPrimaG1.innerHTML = `Battute di prima: ${Giocatore1.batPrimaG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batPrimaG1)}%`;
             batSecondaG1.innerHTML = `Battute di seconda: ${Giocatore1.batSecondaG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batSecondaG1)}%`;
             batNoneG1.innerHTML = `Battute sbagliate: ${Giocatore1.batNoneG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batNoneG1)}%`;
-            batEG1.innerHTML = document.getElementById('batEG1');
-            batCG1.innerHTML = document.getElementById('batCG1');
-            batIG1.innerHTML = document.getElementById('batIG1');
+            batEG1.innerHTML = `Battute esterne: ${Giocatore1.batEG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batEG1)}%`;
+            batCG1.innerHTML = `Battute centrali: ${Giocatore1.batCG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batCG1)}%`;
+            batIG1.innerHTML = `Battute interne: ${Giocatore1.batIG1} | ${fPerc(Giocatore1.batTotG1, Giocatore1.batIG1)}%`;
             rispTotG1.innerHTML = document.getElementById('rispTotG1');
             rispNoneG1.innerHTML = document.getElementById('rispNoneG1');
             rispCG1.innerHTML = document.getElementById('rispCG1');
