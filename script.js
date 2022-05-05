@@ -160,6 +160,7 @@ function submitPunto() {
     punto.dirTT = document.getElementById('terzoToccoDir').value;
     punto.fog = document.getElementById('fg').value;
     punto.durata = document.getElementById('game').value;
+    console.log(punto.durata);
     punto.vincitore = document.getElementById('vincitore').value;
 
 
