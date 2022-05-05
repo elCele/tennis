@@ -159,9 +159,7 @@ function submitPunto() {
     punto.giocatoreTT = document.getElementById('playerBattuta').value;
     punto.dirTT = document.getElementById('terzoToccoDir').value;
     punto.fog = document.getElementById('fg').value;
-    console.log(punto.fog);
-    punto.durata = document.getElementById('game').value;
-    console.log(punto.durata);
+    punto.durata = document.getElementById('durataSel').value;
     punto.vincitore = document.getElementById('vincitore').value;
 
 
