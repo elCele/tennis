@@ -119,6 +119,14 @@ const Giocatore2 = {
     winG2: 0
 }
 
+// oggetto durata
+
+const durataObj = {
+    quattro: 0,
+    otto: 0,
+    nove: 0
+}
+
 function submitPunto() {
 
     // reset object
@@ -336,5 +344,14 @@ function submitPunto() {
         Giocatore1.winG1 += 1;
     } else {
         Giocatore2.winG2 += 1;
+    }
+
+    // assegno durata scambi
+    if (punto.durata === '4') {
+        durataObj.quattro += 1;
+    } else if (punto.durata === '8') {
+        durataObj.otto += 1;
+    } else {
+        durataObj.nove += 1;
     }
 }
