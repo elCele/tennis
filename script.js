@@ -383,5 +383,36 @@ function submitPunto() {
             document.getElementById('gG1'),
             document.getElementById('winG1')
         ];
+
+        const arrayG2 = [
+            document.getElementById('batTotG2'),
+            document.getElementById('batPrimaG2'),
+            document.getElementById('batSecondaG2'),
+            document.getElementById('batNoneG2'),
+            document.getElementById('batEG2'),
+            document.getElementById('batCG2'),
+            document.getElementById('batIG2'),
+            document.getElementById('rispTotG2'),
+            document.getElementById('rispNoneG2'),
+            document.getElementById('rispCG2'),
+            document.getElementById('rispTG2'),
+            document.getElementById('rispDG2'),
+            document.getElementById('rispLG2'),
+            document.getElementById('t3TotG2'),
+            document.getElementById('t3NoneG2'),
+            document.getElementById('t3CG2'),
+            document.getElementById('t3TG2'),
+            document.getElementById('t3DG2'),
+            document.getElementById('t3LG2'),
+            document.getElementById('fG2'),
+            document.getElementById('gG2'),
+            document.getElementById('winG2')
+        ];
+
+        const arrayDurata = [
+            document.getElementById('durataPunto04'),
+            document.getElementById('durataPunto48'),
+            document.getElementById('durataPunto9')
+        ];
     }
 }
