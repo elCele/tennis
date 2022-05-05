@@ -359,7 +359,7 @@ function submitPunto() {
 
 
     function toViewValue() {
-        const arrayG1 = [
+        const arrayG1 = newArray(
             document.getElementById('batTotG1'),
             document.getElementById('batPrimaG1'),
             document.getElementById('batSecondaG1'),
@@ -382,9 +382,9 @@ function submitPunto() {
             document.getElementById('fG1'),
             document.getElementById('gG1'),
             document.getElementById('winG1')
-        ];
+        );
 
-        const arrayG2 = [
+        const arrayG2 = newArray(
             document.getElementById('batTotG2'),
             document.getElementById('batPrimaG2'),
             document.getElementById('batSecondaG2'),
@@ -407,13 +407,13 @@ function submitPunto() {
             document.getElementById('fG2'),
             document.getElementById('gG2'),
             document.getElementById('winG2')
-        ];
+        );
 
-        const arrayDurata = [
+        const arrayDurata = newArray(
             document.getElementById('durataPunto04'),
             document.getElementById('durataPunto48'),
             document.getElementById('durataPunto9')
-        ];
+        );
 
         // Giocatore 1 output
         for (let i = 0; i < arrayG1.lenght; i++) {
