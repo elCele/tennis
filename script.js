@@ -129,6 +129,8 @@ const durataObj = {
 
 function submitPunto() {
 
+    console.log(Giocatore1[3]);
+
     // reset object
     punto.giocatoreBattuta = '';
     punto.battuta = '';
@@ -353,5 +355,35 @@ function submitPunto() {
         durataObj.otto += 1;
     } else {
         durataObj.nove += 1;
+    }
+
+    toViewValue();
+
+
+    function toViewValue() {
+        const arrayG1 = [
+            document.getElementById('batTotG1'),
+            document.getElementById('batPrimaG1'),
+            document.getElementById('batSecondaG1'),
+            document.getElementById('batNoneG1'),
+            document.getElementById('batEG1'),
+            document.getElementById('batCG1'),
+            document.getElementById('batIG1'),
+            document.getElementById('rispTotG1'),
+            document.getElementById('rispNoneG1'),
+            document.getElementById('rispCG1'),
+            document.getElementById('rispTG1'),
+            document.getElementById('rispDG1'),
+            document.getElementById('rispLG1'),
+            document.getElementById('t3TotG1'),
+            document.getElementById('t3NoneG1'),
+            document.getElementById('t3CG1'),
+            document.getElementById('t3TG1'),
+            document.getElementById('t3DG1'),
+            document.getElementById('t3LG1'),
+            document.getElementById('fG1'),
+            document.getElementById('gG1');
+            document.getElementById('winG1')
+        ];
     }
 }
