@@ -15,7 +15,22 @@ if (!empty($playerBattuta) || !empty($battutaN) || !empty($battutaDir) || !empty
     $dbPassword = "";
     $bdname = "tennis_db";
 
-    
+    // create connection
+    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+    if (mysqli_connect_error()) {
+        die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
+    } else {
+        $INSERT = "INSERT INTO `match_tbl`(`playerBattuta`, `battutaN`, `battutaDir`, `rispostaDir`, `terzoToccoDir`, `fg`, `duarataSel`, `vincitore`) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    }
+
+    $stmt = $conn->prepare($INSERT);
+    $stmt->bind_param($playerBattuta, $battutaN, $battutaDir, $rispostaDir, $terzoToccoDir, $fg, $durataSel, $vincitore);
+    $stmt->execute();
+    echo "New record inserted sucessfully";
+
+    $stmt->close();
+    $conn->close();
+
 } else {
     echo "All field are required";
     die();
