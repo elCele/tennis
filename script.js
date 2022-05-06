@@ -166,6 +166,10 @@ function submitPunto() {
     punto.durata = document.getElementById('durataSel').value;
     punto.vincitore = document.getElementById('vincitore').value;
 
+    if (punto.battuta === 'none') {
+        punto.dirRisposta = punto.battuta;
+        punto.dirTT = punto.battuta;
+    }
 
     // punteggio
     const punteggioBox = document.getElementById('punteggio');
@@ -273,7 +277,9 @@ function submitPunto() {
         } else if (punto.dirRisposta === 'L') {
             Giocatore1.rispLG1 += 1;
         } else {
-            Giocatore1.rispNoneG1 += 1;
+            if (!(punto.battuta === 'none')) {
+                Giocatore1.rispNoneG1 += 1;
+            }
         }
 
     } else {
@@ -290,7 +296,9 @@ function submitPunto() {
         } else if (punto.dirRisposta === 'L') {
             Giocatore2.rispLG2 += 1;
         } else {
-            Giocatore2.rispNoneG2 += 1;
+            if (!(punto.battuta === 'none')) {
+                Giocatore2.rispNoneG2 += 1;
+            }
         }
 
     }
@@ -311,7 +319,9 @@ function submitPunto() {
         } else if (punto.dirTT === 'L') {
             Giocatore1.rispLG1 += 1;
         } else {
-            Giocatore1.t3NoneG1 += 1;
+            if (!(punto.battuta === 'none' && punto.dirRisposta === 'none')) {
+                Giocatore1.t3NoneG1 += 1;
+            }
         }
 
     } else {
@@ -328,7 +338,9 @@ function submitPunto() {
         } else if (punto.dirTT === 'L') {
             Giocatore1.rispLG2 += 1;
         } else {
-            Giocatore1.t3NoneG1 += 1;
+            if (!(punto.battuta === 'none' && punto.dirRisposta === 'none')) {
+                Giocatore2.t3NoneG2 += 1;
+            }
         }
 
     }
