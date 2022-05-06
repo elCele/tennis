@@ -266,9 +266,7 @@ function submitPunto() {
     if (punto.giocatoreRisposta === 'G1') {
 
         // Giocatore 1 risposta
-        if (!(punto.battuta === 'none')) {
             Giocatore1.rispTotG1 += 1;
-        }
 
         if (punto.dirRisposta === 'C') {
             Giocatore1.rispCG1 += 1;
@@ -287,9 +285,7 @@ function submitPunto() {
     } else {
 
         // Giocatore 2 risposta
-        if (!(punto.battuta === 'none')) {
             Giocatore2.rispTotG2 += 1;
-        }
 
         if (punto.dirRisposta === 'C') {
             Giocatore2.rispCG2 += 1;
@@ -312,9 +308,7 @@ function submitPunto() {
     if (punto.giocatoreTT === 'G1') {
 
         // Giocatore 1 terzo tocco
-        if (!(punto.battuta === 'none')) {
             Giocatore1.t3TotG1 += 1;
-        }
 
         if (punto.dirTT === 'C') {
             Giocatore1.t3CG1 += 1;
@@ -333,9 +327,7 @@ function submitPunto() {
     } else {
 
         // Giocatore 2 terzo tocco
-        if (!(punto.battuta === 'none')) {
             Giocatore2.t3TotG2 += 1;
-        }
 
         if (punto.dirTT === 'C') {
             Giocatore1.t3CG2 += 1;
