@@ -89,7 +89,9 @@ const Giocatore1 = {
     t3LG1: 0,
     fG1: 0,
     gG1: 0,
-    winG1: 0
+    winG1: 0,
+    puntiPrimaG1: 0,
+    puntiSecondaG1: 0
 }
 
 // oggetto Giocatore 2
@@ -116,7 +118,9 @@ const Giocatore2 = {
     t3LG2: 0,
     fG2: 0,
     gG2: 0,
-    winG2: 0
+    winG2: 0,
+    puntiPrimaG2: 0,
+    puntiSecondaG2: 0
 }
 
 // oggetto durata
@@ -350,6 +354,25 @@ function submitPunto() {
         Giocatore2.winG2 += 1;
     }
 
+    // assegno punti vinti a seconda della battuta
+        // Giocatore 1
+        if (punto.giocatoreBattuta === 'G1' && punto.vincitore === 'G1') {
+            if (punto.battuta === '1') {
+                Giocatore1.puntiPrimaG1 += 1;
+            } else if (punto.battuta === '2') {
+                Giocatore1.puntiSecondaG1 += 1;
+            }
+        }
+
+        // Giocatore 2
+        if (punto.giocatoreBattuta === 'G2' && punto.vincitore === 'G2') {
+            if (punto.battuta === '1') {
+                Giocatore2.puntiPrimaG2 += 1;
+            } else if (punto.battuta === '2') {
+                Giocatore2.puntiSecondaG2 += 1;
+            }
+        }
+
     // assegno durata scambi
     if (punto.durata === 'quattro') {
         durataObj.quattro += 1;
@@ -387,6 +410,8 @@ function submitPunto() {
             const fG1 = document.getElementById('fG1');
             const gG1 = document.getElementById('gG1');
             const winG1 = document.getElementById('winG1');
+            const puntiPrimaG1 = document.getElementById('puntiPrimaG1');
+            const puntiSecondaG1 = document.getElementById('puntiSecondaG1');
 
         // variabili Giocatore 2
             const batTotG2 = document.getElementById('batTotG2');
@@ -411,6 +436,8 @@ function submitPunto() {
             const fG2 = document.getElementById('fG2');
             const gG2 = document.getElementById('gG2');
             const winG2 = document.getElementById('winG2');
+            const puntiPrimaG2 = document.getElementById('puntiPrimaG2');
+            const puntiSecondaG2 = document.getElementById('puntiSecondaG2');
 
         // variabili durata
             const quattroDiv = document.getElementById('durataPunto04');
@@ -441,6 +468,8 @@ function submitPunto() {
             fG1.innerHTML = `Punti forzati: ${Giocatore1.fG1} | ${fPerc(Npunti, Giocatore1.fG1)}%`;
             gG1.innerHTML = `Punti gratuiti: ${Giocatore1.gG1} | ${fPerc(Npunti, Giocatore1.gG1)}%`;
             winG1.innerHTML = `Punti vinti: ${Giocatore1.winG1} | ${fPerc(Npunti, Giocatore1.winG1)}%`;
+            puntiPrimaG1.innerHTML = `Punti vinti battendo di prima: ${Giocatore1.puntiPrimaG1} | ${fPerc(Giocatore1.winG1, Giocatore1.puntiPrimaG1)}%`;
+            puntiSecondaG1.innerHTML = `Punti vinti battendo di seconda: ${Giocatore1.puntiSecondaG1} | ${fPerc(Giocatore1.winG1, Giocatore1.puntiSecondaG1)}%`;
 
         // output Div variabili Giocatore 2
             batTotG2.innerHTML = `Battute totali: ${Giocatore2.batTotG2}`;
@@ -465,6 +494,8 @@ function submitPunto() {
             fG2.innerHTML = `Punti forzati: ${Giocatore2.fG2} | ${fPerc(Npunti, Giocatore2.fG2)}%`;
             gG2.innerHTML = `Punti gratuiti: ${Giocatore2.gG2} | ${fPerc(Npunti, Giocatore2.gG2)}%`;
             winG2.innerHTML = `Punti vinti: ${Giocatore2.winG2} | ${fPerc(Npunti, Giocatore2.winG2)}%`;
+            puntiPrimaG2.innerHTML = `Punti vinti battendo di prima: ${Giocatore2.puntiPrimaG2} | ${fPerc(Giocatore2.winG2, Giocatore2.puntiPrimaG2)}%`;
+            puntiSecondaG2.innerHTML = `Punti vinti battendo di seconda: ${Giocatore2.puntiSecondaG2} | ${fPerc(Giocatore2.winG2, Giocatore1.puntiSecondaG2)}%`;
 
         // output Div variabili durata
             quattroDiv.innerHTML = `Tra 0 e 4 scambi: ${durataObj.quattro} | ${fPerc(Npunti, durataObj.quattro)}%`;
