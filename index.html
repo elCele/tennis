@@ -16,7 +16,7 @@
             <p>Battuta</p>
             <div id="playerDiv">
                 <label for="playerBattuta">In battuta: </label>
-                <select id="playerBattuta" name="playerBattuta">
+                <select id="playerBattuta" name="playerBattuta" required>
                     <option selected hidden value=""></option>
                     <option value="G1">Giocatore 1</option>
                     <option value="G2">Giocatore 2</option>
@@ -25,7 +25,7 @@
 
             <div id="battutaNDiv">
                 <label for="battutaN">Battuta: </label>
-                <select id="battutaN" name="battutaN">
+                <select id="battutaN" name="battutaN" required> 
                     <option selected hidden value=""></option>
                     <option value="1">Prima</option>
                     <option value="2">Seconda</option>
@@ -35,7 +35,7 @@
 
             <div id="battutaDirDiv">
                 <label for="battutaDir">Direzione battuta: </label>
-                <select id="battutaDir" name="battutaDir">
+                <select id="battutaDir" name="battutaDir" required>
                     <option selected hidden value=""></option>
                     <option value="E">Esterna</option>
                     <option value="C">Centrale</option>
@@ -49,7 +49,7 @@
         <form action="transfer.php" method="POST" id="rispostaForm">
             <p>Risposta</p>
             <label for="rispostaDir">Direzione risposta: </label>
-            <select id="rispostaDir" name="rispostaDir">
+            <select id="rispostaDir" name="rispostaDir" required>
                 <option selected hidden value=""></option>
                 <option value="C">Centrale</option>
                 <option value="T">T</option>
@@ -63,7 +63,7 @@
         <form action="transfer.php" method="POST" id="terzoToccoForm">
             <p>Terzo tocco</p>
             <label for="terzoToccoDir">Direzione terzo tocco: </label>
-            <select id="terzoToccoDir" name="terzoToccoDir">
+            <select id="terzoToccoDir" name="terzoToccoDir" required>
                 <option selected hidden value=""></option>
                 <option value="C">Centrale</option>
                 <option value="T">T</option>
@@ -78,7 +78,7 @@
         <!--Forzato e Gratuito-->
         <form action="transfer.php" method="POST" id="fOGForm">
             <p>Forzato o gratuito</p>
-                <select id="fg" name="fg">
+                <select id="fg" name="fg" required>
                     <option selected hidden value=""></option>
                     <option value="F">Forzato</option>
                     <option value="G">Gratuito</option>
@@ -88,7 +88,7 @@
         <!--Durata game-->
         <form action="transfer.php" method="POST" id="gameForm">
             <p>Durata game</p>
-            <select id="durataSel" name="durataSel">
+            <select id="durataSel" name="durataSel" required>
                 <option selected hidden value=""></option>
                 <option value="quattro">0 - 4</option>
                 <option value="otto">4 - 8</option>
@@ -99,7 +99,7 @@
         <!--Vincitore-->
         <form action="transfer.php" method="POST" id="vincitoreForm">
             <p>Vincitore</p>
-            <select id="vincitore" name="vincitore">
+            <select id="vincitore" name="vincitore" required>
                 <option selected hidden value=""></option>
                 <option value="G1">Giocatore 1</option>
                 <option value="G2">Giocatore 2</option>
