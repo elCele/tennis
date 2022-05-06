@@ -47,7 +47,8 @@
         <form id="rispostaForm">
             <p>Risposta</p>
             <label for="rispostaDir">Direzione risposta: </label>
-            <select id="rispostaDir">
+            <select id="rispostaDir" name="rispostaDir">
+                <option selected hidden value=""></option>
                 <option value="C">Centrale</option>
                 <option value="T">T</option>
                 <option value="D">Diagonale</option>
@@ -60,7 +61,8 @@
         <form id="terzoToccoForm">
             <p>Terzo tocco</p>
             <label for="terzoToccoDir">Direzione terzo tocco: </label>
-            <select id="terzoToccoDir">
+            <select id="terzoToccoDir" name="terzoToccoDir">
+                <option selected hidden value=""></option>
                 <option value="C">Centrale</option>
                 <option value="T">T</option>
                 <option value="D">Diagonale</option>
@@ -74,7 +76,8 @@
         <!--Forzato e Gratuito-->
         <form id="fOGForm">
             <p>Forzato o gratuito</p>
-                <select id="fg">
+                <select id="fg" name="fg">
+                    <option selected hidden value=""></option>
                     <option value="F">Forzato</option>
                     <option value="G">Gratuito</option>
                 </select>
@@ -83,7 +86,8 @@
         <!--Durata game-->
         <form id="gameForm">
             <p>Durata game</p>
-            <select id="durataSel">
+            <select id="durataSel" name="durataSel">
+                <option selected hidden value=""></option>
                 <option value="quattro">0 - 4</option>
                 <option value="otto">4 - 8</option>
                 <option value="nove">9+</option>
@@ -93,7 +97,8 @@
         <!--Vincitore-->
         <form id="vincitoreForm">
             <p>Vincitore</p>
-            <select id="vincitore">
+            <select id="vincitore" name="vincitore">
+                <option selected hidden value=""></option>
                 <option value="G1">Giocatore 1</option>
                 <option value="G2">Giocatore 2</option>
             </select>
