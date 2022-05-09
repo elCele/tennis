@@ -420,6 +420,7 @@ function submitPunto() {
     }
 
     toViewValue();
+    tableCreate(punto);
 }
 
     function toViewValue() {
