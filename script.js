@@ -220,11 +220,9 @@ function submitPunto() {
                 puntiGameG1 = '/';
             }
     }
-    
+
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
-}
-
 
     // assegno dati battuta
     if(punto.giocatoreBattuta === 'G1') {
@@ -405,7 +403,7 @@ function submitPunto() {
     }
 
     toViewValue();
-
+}
 
     function toViewValue() {
 
