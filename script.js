@@ -523,8 +523,7 @@ function submitPunto() {
             quattroDiv.innerHTML = `Tra 0 e 4 scambi: ${durataObj.quattro} | ${fPerc(Npunti, durataObj.quattro)}%`;
             ottoDiv.innerHTML = `Tra 4 e 8 scambi: ${durataObj.otto} | ${fPerc(Npunti, durataObj.otto)}%`;
             noveDiv.innerHTML = `Più di 9 scambi: ${durataObj.nove} | ${fPerc(Npunti, durataObj.nove)}%`;
-    }
-}
+        }
 
 function fPerc(tot, perc) {
     let value = Math.round((perc * 100) / tot)
