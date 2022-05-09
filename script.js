@@ -175,52 +175,6 @@ function submitPunto() {
     const punteggioBox = document.getElementById('punteggio');
     const gameBox = document.getElementById('game');
 
-    if (!(puntiGameG1 === 40 && puntiGameG2 === 40)) {
-        if ( punto.vincitore === 'G1') {
-            switch(puntiGameG1) {
-                case 0:
-                    puntiGameG1 = 15;
-                    break;
-                case 15:
-                    puntiGameG1 = 30;
-                    break;
-                case 30:
-                    puntiGameG1 = 40;
-                    break;
-                case 40:
-                    puntiGameG1 = 0;
-                    puntiGameG2 = 0;
-                    gameG1 += 1;
-                default:
-            }
-        } else {
-            switch(puntiGameG2) {
-                case 0:
-                    puntiGameG2 = 15;
-                    break;
-                case 15:
-                    puntiGameG2 = 30;
-                    break;
-                case 30:
-                    puntiGameG2 = 40;
-                    break;
-                case 40:
-                    puntiGameG1 = 0;
-                    puntiGameG2 = 0;
-                    gameG2 += 1;
-                default:
-            }
-        }
-    } else if (puntiGameG1 === 40 && puntiGameG2 === 40) {
-        if ( punto.vincitore === 'G1') {
-            puntiGameG1 = 'Adv';
-            puntiGameG2 = '/';
-            } else {
-                puntiGameG2 = 'Adv';
-                puntiGameG1 = '/';
-            }
-    }
-
     if (puntiGameG1 === 'Adv' && punto.vincitore === 'G1') {
         gameG1 += 1;
         puntiGameG1 = 0;
@@ -232,6 +186,53 @@ function submitPunto() {
         gameG2 += 1;
         puntiGameG1 = 0;
         puntiGameG2 = 0;
+    } else {
+        
+        if (!(puntiGameG1 === 40 && puntiGameG2 === 40)) {
+            if ( punto.vincitore === 'G1') {
+                switch(puntiGameG1) {
+                    case 0:
+                        puntiGameG1 = 15;
+                        break;
+                    case 15:
+                        puntiGameG1 = 30;
+                        break;
+                    case 30:
+                        puntiGameG1 = 40;
+                        break;
+                    case 40:
+                        puntiGameG1 = 0;
+                        puntiGameG2 = 0;
+                        gameG1 += 1;
+                    default:
+                }
+            } else {
+                switch(puntiGameG2) {
+                    case 0:
+                        puntiGameG2 = 15;
+                        break;
+                    case 15:
+                        puntiGameG2 = 30;
+                        break;
+                    case 30:
+                        puntiGameG2 = 40;
+                        break;
+                    case 40:
+                        puntiGameG1 = 0;
+                        puntiGameG2 = 0;
+                        gameG2 += 1;
+                    default:
+                }
+            }
+        } else if (puntiGameG1 === 40 && puntiGameG2 === 40) {
+            if ( punto.vincitore === 'G1') {
+                puntiGameG1 = 'Adv';
+                puntiGameG2 = '/';
+                } else {
+                    puntiGameG2 = 'Adv';
+                    puntiGameG1 = '/';
+                }
+        }
     }
 
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
