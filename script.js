@@ -221,6 +221,19 @@ function submitPunto() {
             }
     }
 
+    if (puntiGameG1 === 'Adv' && punto.vincitore === 'G1') {
+        gameG1 += 1;
+        puntiGameG1 = 0;
+        puntiGameG2 = 0;
+    } else if (puntiGameG2 === 'Adv' && punto.vincitore === 'G1') {
+        puntiGameG1 = 40;
+        puntiGameG2 = 40;
+    } else if (puntiGameG2 === 'Adv' && punto.vincitore === 'G2') {
+        gameG2 += 1;
+        puntiGameG1 = 0;
+        puntiGameG2 = 0;
+    }
+
     punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
 
