@@ -544,3 +544,19 @@ function fPerc(tot, perc) {
     let value = Math.round((perc * 100) / tot)
     return value;
 }
+
+function tableCreate(obj) {
+    const div = document.getElementById('createTable');
+    const table = document.createElement('table');
+    const tbody = document.createElement('tbody');
+    const tr = document.createElement('tr');
+
+    for (let i = 0; i < obj.lenght; i++) {
+        const td = document.createElement('td');
+        td.innerHTML = obj[i].value;
+        tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+    table.appendChild(tbody);
+    div.appendChild(table);
+}
