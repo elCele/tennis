@@ -186,6 +186,9 @@ function submitPunto() {
         gameG2 += 1;
         puntiGameG1 = 0;
         puntiGameG2 = 0;
+    } else if (puntiGameG1 === 'Adv' && punto.vincitore === 'G2') {
+        puntiGameG1 = 40;
+        puntiGameG2 = 40;
     } else {
 
         if (!(puntiGameG1 === 40 && puntiGameG2 === 40)) {
