@@ -222,7 +222,7 @@ function submitPunto() {
         }
     }
 
-    punteggioBox.innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
+    document.getElementById('punteggio').innerHTML = `${puntiGameG1} - ${puntiGameG2}`;
     gameBox.innerHTML = `${gameG1} - ${gameG2}`;
 
 
