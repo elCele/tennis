@@ -557,18 +557,24 @@ function tableCreate() {
           // table row creation
           var row = document.createElement("tr");
       
+          var i = 0;
           for (const property in punto) {
             // create element <td> and text node 
             //Make text node the contents of <td> element
             // put <td> at end of the table row
             var cell = document.createElement("td");
-            var cellText = document.createTextNode(property);
+            var cellText = document.createTextNode(property.value);
       
             cell.appendChild(cellText);
+            cell.className = 'tbCcell';
             row.appendChild(cell);
+            i += 1;
           }
       
           //row added to end of table body
           tblbody.appendChild(row);
+
+          const td = document.getElementsByClassName('tbCell')
+          td.setAttribute('border', '2')
       
 }
