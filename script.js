@@ -569,6 +569,6 @@ function tableCreate(obj) {
           }
       
           //row added to end of table body
-          tblBody.appendChild(row);
+          tblbody.appendChild(row);
       
 }
