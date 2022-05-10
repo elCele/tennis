@@ -426,7 +426,7 @@ function submitPunto() {
     }
 
     toViewValue();
-    tableCreate(punto);
+    tableCreate();
 }
 
     function toViewValue() {
@@ -552,12 +552,12 @@ function fPerc(tot, perc) {
     return value;
 }
 
-function tableCreate(obj) {
+function tableCreate() {
       
           // table row creation
           var row = document.createElement("tr");
       
-          for (const property in object) {
+          for (const property in punto) {
             // create element <td> and text node 
             //Make text node the contents of <td> element
             // put <td> at end of the table row
