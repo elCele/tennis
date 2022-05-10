@@ -133,6 +133,12 @@ const durataObj = {
 
     let Npunti = 0;
 
+var tblbody = document.createElement('tbody');
+var tbl = document.getElementById("tableCreate");
+
+tbl.appendChild(tblbody);
+
+
 function submitPunto() {
 
     Npunti += 1;
@@ -547,17 +553,22 @@ function fPerc(tot, perc) {
 }
 
 function tableCreate(obj) {
-    const div = document.getElementById('createTable');
-    const table = document.createElement('table');
-    const tbody = document.createElement('tbody');
-    const tr = document.createElement('tr');
-
-    for (let i = 0; i < obj.lenght; i++) {
-        const td = document.createElement('td');
-        td.innerHTML = obj[i].value;
-        tr.appendChild(td);
-    }
-    tbody.appendChild(tr);
-    table.appendChild(tbody);
-    div.appendChild(table);
+      
+          // table row creation
+          var row = document.createElement("tr");
+      
+          for (var i = 0; i < obj.lenght; i++) {
+            // create element <td> and text node 
+            //Make text node the contents of <td> element
+            // put <td> at end of the table row
+            var cell = document.createElement("td");
+            var cellText = document.createTextNode(obj[i]);
+      
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+          }
+      
+          //row added to end of table body
+          tblBody.appendChild(row);
+      
 }
