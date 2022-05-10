@@ -569,12 +569,10 @@ function tableCreate() {
             cell.className = 'tbCcell';
             row.appendChild(cell);
             i += 1;
+            cell.style.border = 'thin, black, 2px';
           }
       
           //row added to end of table body
           tblbody.appendChild(row);
-
-          const td = document.getElementsByClassName('tbCell')
-          td.style.border = 'thin, black, 2';
       
 }
