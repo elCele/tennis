@@ -563,7 +563,7 @@ function tableCreate() {
             //Make text node the contents of <td> element
             // put <td> at end of the table row
             var cell = document.createElement("td");
-            var cellText = document.createTextNode(property.value);
+            var cellText = document.createTextNode(punto[property]);
       
             cell.appendChild(cellText);
             cell.className = 'tbCcell';
@@ -575,6 +575,6 @@ function tableCreate() {
           tblbody.appendChild(row);
 
           const td = document.getElementsByClassName('tbCell')
-          td.setAttribute('border', '2')
+          td.style.border = 'thin, black, 2';
       
 }
