@@ -557,12 +557,12 @@ function tableCreate(obj) {
           // table row creation
           var row = document.createElement("tr");
       
-          for (var i = 0; i < obj.lenght; i++) {
+          for (const property in object) {
             // create element <td> and text node 
             //Make text node the contents of <td> element
             // put <td> at end of the table row
             var cell = document.createElement("td");
-            var cellText = document.createTextNode(obj[i]);
+            var cellText = document.createTextNode(property);
       
             cell.appendChild(cellText);
             row.appendChild(cell);
