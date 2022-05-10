@@ -426,7 +426,7 @@ function submitPunto() {
     }
 
     toViewValue();
-    tableCreate();
+    tableCreate(); //zio fa funziona
 }
 
     function toViewValue() {
