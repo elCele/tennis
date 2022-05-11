@@ -13,6 +13,8 @@ const punto = {
     vincitore: ''
 }
 
+    const arrayGame = [];
+
 /* Giocatore 1 
     batTotG1: document.getElementById('batTotG1'),
     batPrimaG1: document.getElementById('batPrimaG1'),
@@ -556,6 +558,8 @@ function tableCreate() {
       
           // table row creation
           var row = document.createElement("tr");
+          // array inside create
+          const arrayPoint = [];
       
           var i = 0;
           for (const property in punto) {
@@ -564,6 +568,7 @@ function tableCreate() {
             // put <td> at end of the table row
             var cell = document.createElement("td");
             var cellText = document.createTextNode(punto[property]);
+            arrayPoint.push(punto[property]);
       
             cell.appendChild(cellText);
             cell.className = 'tbCcell';
@@ -574,5 +579,8 @@ function tableCreate() {
       
           //row added to end of table body
           tblbody.appendChild(row);
-      
+          
+          // push to arrayGame
+          arrayGame.push(arrayPoint);
+          console.log(arrayGame);
 }
