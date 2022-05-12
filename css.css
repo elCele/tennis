@@ -63,4 +63,5 @@ td {
 .border {
     border: 1px solid #000 !important;
     border-radius: 15px;
+    margin: 5px;
 }
