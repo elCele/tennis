@@ -61,5 +61,6 @@ td {
 }
 
 .border {
-    border: thin, solid, black;
+    border: 1px solid #000 !important;
+    border-radius: 15px;
 }
