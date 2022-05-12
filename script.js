@@ -558,6 +558,7 @@ function tableCreate() {
       
           // table row creation
           var row = document.createElement("tr");
+          row.className = 'border';
           // array inside create
           const arrayPoint = [];
       
